@@ -53,8 +53,11 @@
                                     <constraint firstAttribute="height" constant="30" id="Wzf-AY-0UY"/>
                                 </constraints>
                                 <state key="normal" title="Is It Prime?"/>
+                                <connections>
+                                    <action selector="isItPrime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VBR-X8-Cvy"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vj-Ja-P9v">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vj-Ja-P9v">
                                 <rect key="frame" x="183" y="289" width="234" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="2W3-6w-5Oz"/>
@@ -80,6 +83,10 @@
                             <constraint firstItem="gjf-Ex-yoC" firstAttribute="top" secondItem="zUI-KH-od9" secondAttribute="bottom" constant="25" id="jt7-3R-n2h"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="numberTextField" destination="aHj-rN-kW5" id="rks-cT-538"/>
+                        <outlet property="resultLabel" destination="7Vj-Ja-P9v" id="qWK-G4-fvg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
