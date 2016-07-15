@@ -36,6 +36,8 @@ class ViewController: UIViewController {
             }
         
             print(isPrime)
+        } else {
+            resultLabel.text = "Please enter a whole number"
         }
     }
     
