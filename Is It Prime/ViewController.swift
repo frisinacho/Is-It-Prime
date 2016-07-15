@@ -15,27 +15,28 @@ class ViewController: UIViewController {
     
     @IBAction func isItPrime(sender: AnyObject) {
         
-        let number = Int(numberTextField.text!)!
+        if let number = Int(numberTextField.text!) {
         
-        var isPrime = true
+            var isPrime = true
         
-        if number == 1 {isPrime = false}
+            if number == 1 {isPrime = false}
         
-        if number != 2 && number != 1 {
-            for i in 2 ..< number {
-                if number % i == 0 {
-                    isPrime = false
+            if number != 2 && number != 1 {
+                for i in 2 ..< number {
+                    if number % i == 0 {
+                        isPrime = false
+                    }
                 }
             }
-        }
         
-        if isPrime {
-            resultLabel.text = "\(number) is prime!"
-        } else {
-            resultLabel.text = "\(number) is not prime"
-        }
+            if isPrime {
+                resultLabel.text = "\(number) is prime!"
+            } else {
+                resultLabel.text = "\(number) is not prime"
+            }
         
-        print(isPrime)
+            print(isPrime)
+        }
     }
     
     override func viewDidLoad() {
