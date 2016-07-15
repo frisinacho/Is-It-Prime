@@ -27,12 +27,57 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter a number in the box" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjf-Ex-yoC">
+                                <rect key="frame" x="202" y="137" width="197" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="197" id="dv9-Lz-XxX"/>
+                                    <constraint firstAttribute="height" constant="21" id="hY8-ch-ERp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eg. 17" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aHj-rN-kW5">
+                                <rect key="frame" x="252" y="166" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OGa-tG-FKR"/>
+                                    <constraint firstAttribute="width" constant="97" id="nYD-Dw-Imk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOf-oW-drj">
+                                <rect key="frame" x="262" y="204" width="76" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="QAz-Ig-x1e"/>
+                                    <constraint firstAttribute="height" constant="30" id="Wzf-AY-0UY"/>
+                                </constraints>
+                                <state key="normal" title="Is It Prime?"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vj-Ja-P9v">
+                                <rect key="frame" x="183" y="289" width="234" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2W3-6w-5Oz"/>
+                                    <constraint firstAttribute="width" constant="234" id="L4w-Ga-ltO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="aHj-rN-kW5" firstAttribute="top" secondItem="gjf-Ex-yoC" secondAttribute="bottom" constant="8" id="3La-3N-Qwa"/>
                             <constraint firstItem="zUI-KH-od9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="56" id="5HJ-yh-Wtx"/>
+                            <constraint firstItem="7Vj-Ja-P9v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="65f-MW-Sg0"/>
                             <constraint firstItem="zUI-KH-od9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G2L-os-ICN"/>
                             <constraint firstItem="zUI-KH-od9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="JKe-4w-Jie"/>
+                            <constraint firstItem="YOf-oW-drj" firstAttribute="top" secondItem="aHj-rN-kW5" secondAttribute="bottom" constant="8" id="QnW-Kj-Ww1"/>
+                            <constraint firstItem="aHj-rN-kW5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TNY-Ck-cbd"/>
+                            <constraint firstItem="7Vj-Ja-P9v" firstAttribute="top" secondItem="YOf-oW-drj" secondAttribute="bottom" constant="55" id="VBx-g3-e0T"/>
+                            <constraint firstItem="YOf-oW-drj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W4D-X2-DIX"/>
+                            <constraint firstItem="gjf-Ex-yoC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bfM-gy-yTx"/>
+                            <constraint firstItem="gjf-Ex-yoC" firstAttribute="top" secondItem="zUI-KH-od9" secondAttribute="bottom" constant="25" id="jt7-3R-n2h"/>
                         </constraints>
                     </view>
                 </viewController>
